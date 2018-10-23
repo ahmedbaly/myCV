@@ -1,0 +1,467 @@
+/* Dédnition des polices personnalisées */
+
+@font-face
+{
+    font-family: 'BallparkWeiner';
+    src: url('polices/ballpark.eot');
+    src: url('polices/ballpark.eot?#iefix') format('embedded-opentype'),
+         url('polices/ballpark.woff') format('woff'),
+         url('polices/ballpark.ttf') format('truetype'),
+         url('polices/ballpark.svg#BallparkWeiner') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face
+{
+    font-family: 'Dayrom';
+    src: url('polices/dayrom.eot');
+    src: url('polices/dayrom.eot?#iefix') format('embedded-opentype'),
+         url('polices/dayrom.woff') format('woff'),
+         url('polices/dayrom.ttf') format('truetype'),
+         url('polices/dayrom.svg#Dayrom') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Eléments principaux de 
+ page */
+
+body
+{  
+  background: url('images/computer.jpg') no-repeat ;
+  background-attachment: fixed;
+  background-size: 100%;
+   /* color: #181818; */
+font-family: 'Trebuchet MS', Arial, sans-serif;
+ color: white;
+ text-shadow: 2px 2px 6px black;
+}
+
+#bloc_page
+{
+    width: 70%;
+    margin: auto;
+}
+
+section h1, footer h1, nav a
+{
+    
+    font-family: Dayrom, serif;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+
+/* Header */
+
+header
+{
+   background-color: rgba(24,24,24,0.5);
+
+    display: flex;
+  border-radius: 10px 10px 10px 10px;
+   box-shadow: 2px 2px 8px white;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding-left:  2%;
+    padding-right: 1%;
+    padding-top: 10px;
+
+  border: 2px solid white;
+}
+
+#titre_principal
+{
+    display: flex;
+    flex-direction: column;
+}
+
+#logo
+{
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+}
+
+#logo img
+{
+   
+}
+
+header h1
+{
+    
+    text-shadow: 2px 2px 6px black;
+    font-family: 'BallparkWeiner', serif;
+    font-size: 2.5em;
+    font-weight: normal;
+    margin: 0 0 0 10px;
+}
+
+header h2
+{   text-shadow: 2px 2px 4px black;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+    font-size: 1.1em;
+    margin: 0 0 10px 30px;
+    font-weight: normal;
+    
+}
+
+/* Navigation */
+
+nav ul
+{    background-color: #36B4A7;
+    list-style-type: none;
+    display: flex;
+    text-shadow: 2px 2px 4px black;
+    border-radius: 5px 5px 5px 5px;
+    box-shadow: 2px 2px 4px white ;
+    border: 2px solid white;
+
+}
+
+nav li
+{
+    margin-right: 15px;
+}
+
+nav a
+{
+    font-size: 1.0em;
+    color: white ;
+    padding-bottom: 2px;
+    text-decoration: none;
+}
+
+nav a:hover
+{
+    color: silver;
+    border-bottom: 3px solid silver;
+}
+
+/* Bannière */
+
+#banniere_image
+{
+    margin-top: 15px;
+    height: 200px;
+    /*height: 200px;*/
+    border-radius: 5px;
+    background: url('images/binarire.jpg') ;
+    position: center ;
+    box-shadow: 2px 2px 8px white;
+    margin-bottom: 15px;
+    border: 2px solid white;
+    border-radius: 10px 10px 10px 10px;
+}
+
+#banniere_description
+{
+    position: absolute;
+    
+    border-radius: 0px 0px 5px 5px;
+    width: 68.4%;
+    height: 33px;
+    padding-top: 15px;
+    margin-top: 152px;
+    padding-left: 3px;
+    padding-right: 3px;
+    background-color: rgba(24,24,24,0.8);
+    color: white;
+    font-size: 0.8em;
+
+    
+}
+
+.bouton_rouge
+{
+    height: 25px;
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
+    background: url('images/fond_degraderouge.png') repeat-x;
+    border: 1px solid #760001;
+    border-radius: 5px;
+    font-size: 1.2em;
+    text-align: center;
+    padding: 3px 8px 0px 8px;
+    color: white;
+    text-decoration: none;
+}
+
+.bouton_rouge img
+{
+    border: 0;
+}
+
+/* Corps */
+
+section
+
+{   background-color: rgba(24,24,24,0.5);
+    border: 2px solid white;
+    display: flex;
+    margin-bottom: 15px;
+     border-radius: 10px 10px 10px 10px;
+   box-shadow: 2px 2px 8px white;
+
+}
+
+article, aside
+{   padding-top: 20px;
+    text-align: justify;
+     padding-bottom: 80px;
+}
+
+article
+{  
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 2px 2px 4px white;
+    text-shadow: 2px 2px 4px black;
+    margin-right: 5px;
+    flex: 3;
+    padding-left:  20px;
+    padding-right: 20px;
+}
+
+ article ul {
+     padding: 10px 20px 10px 30px;
+     font-size: 0.9em;
+     border-radius: 10px 10px 10px 10px;
+
+}
+ 
+
+
+.ico_categorie
+{
+    vertical-align: middle;
+    margin-right: 8px;
+}
+
+article p
+{  
+    background-color: rgba(24,24,24,0);
+       font-size: 0.9em;
+       padding: 5px;
+    text-align: justify;
+     
+     margin-bottom: 0px;
+     margin-top: 0px;
+    
+}
+
+aside
+{
+    flex: 1.2;
+    position: relative;
+    padding: 10px;
+    color: white;
+    font-size: 0.9em;
+    text-shadow: 2px 2px 4px black;
+}
+
+
+#fleche_bulle
+{
+    position: absolute;
+    top: 100px;
+    left: -12px;
+}
+
+#photo_zozor
+{
+    text-align: center;
+    text-shadow: 2px 2px 4px black;
+}
+
+#photo_zozor img
+{
+    border: 2px solid white;
+    border-radius: 75px 75px 75px 75px ;
+    box-shadow: 2px 2px 4px black;
+}
+
+aside img
+{
+    margin-right: 5px;
+    box-shadow: 2px 2px 4px black;
+
+}
+
+/* Footer */
+
+footer
+{  border: 2px solid white;
+    box-shadow: 2px 2px 8px white;
+    display: flex;
+   /* background:  url('images/ico_top.png') no-repeat top center, url('images/separateur.png') repeat-x top, url('images/ombre.png') repeat-x top;*/
+    padding-top: 25px;
+     align-items: flex-end;
+      border-radius: 10px 10px 10px 10px;
+      background-color: rgba(24,24,24,0.5);
+  
+}
+
+footer p, footer ul
+{
+    font-size: 0.8em;
+}
+
+footer h1
+{
+    font-size: 1.1em;
+}
+
+
+#tweet
+{
+    width: 28%;
+}
+
+#mes_photos
+{
+    width: 35%;
+}
+
+#mes_amis
+{
+    width: 31%;
+}
+
+#mes_photos img
+{
+    border: 1px solid #181818;
+    margin-right: 2px;
+}
+
+#listes_amis
+{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0;
+}
+
+#mes_amis ul
+{
+    list-style-image: url('images/ico_liensexterne.png');
+    padding-left: 2px;
+}
+
+#mes_amis a
+{
+    text-decoration: none;
+    color: #760001;
+}
+
+#center {
+    text-align: center;
+}
+
+strong {
+     
+     text-decoration: bold;
+}
+mark { border: 2px solid white ;
+     text-shadow: 2px 2px 4px black;
+     padding: 4px 8px 4px 4px;
+     color: white;
+     background-color: #36B4A7;
+     border-radius: 5px 5px 5px 5px;
+     box-shadow: 2px 2px 4px white;
+}
+em {
+    text-decoration: bold;
+    color: #36B4A7;
+    text-transform: uppercase;
+
+
+}
+
+
+.nom {
+
+   border: 1px solid rgba(24,24,24,0.2) ;
+    color: white;  
+background-color: rgba(24,24,24,0);
+margin-top: 5px;
+margin-bottom: 5px;
+padding-left: 10px;
+    width: 70%;
+    margin-left:  60px;
+    padding: 5px;
+}
+.lastname {
+  color: white;  
+     border: 1px solid rgba(24,24,24,0.2) ;
+    background-color: rgba(24,24,24,0);
+margin-top: 5px;
+margin-bottom: 5px;
+ padding-left: 10px;
+    
+     width: 70%;
+     margin-left: 30px;
+     padding: 5px;
+}
+
+.email {
+  color: white;  
+     border: 1px solid rgba(24,24,24,0.2) ;
+    background-color: rgba(24,24,24,0);
+margin-top: 5px;
+margin-bottom: 5px;
+ padding-left: 10px;
+      width: 70%;
+    margin-left:  60px;
+    padding: 5px;
+}
+
+.tel {
+  color: white;  
+     border: 1px solid rgba(24,24,24,0.2) ;
+    background-color: rgba(24,24,24,0);
+  padding-left: 10px;
+margin-top: 5px;
+margin-bottom: 5px;
+      width: 70%;
+      padding: 5px;
+  
+}
+
+.objet { color: white;
+     border: 1px solid rgba(24,24,24,0.2) ;
+    background-color: rgba(24,24,24,0);
+  padding-left: 10px;
+margin-top: 5px;
+margin-bottom: 5px;
+      width: 70%;
+      padding: 5px;
+      margin-left: 60px;
+  
+}
+.bodyt { color: white;
+     border: 1px solid rgba(24,24,24,0.2) ;
+    background-color: rgba(24,24,24,0);
+  padding-left: 10px;
+margin-top: 5px;
+margin-bottom: 5px;
+      width: 70%;
+      padding: 5px;
+      margin-left: 108px;
+  
+}
+
+.rate {
+
+  color: white;
+     border: 1px solid rgba(24,24,24,0.2) ;
+    background-color: rgba(24,24,24,0);
+  margin-left: 20%;
+}
+
+.buttom
+
+{margin-top: 2% ;
+  margin-left: 88%;
+  width: 11%;
+}
